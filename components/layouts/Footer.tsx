@@ -150,9 +150,24 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Footer Bottom */}
-        <div className="text-center text-gray-500 text-sm py-4 border-t border-gray-800">
+        {/* Footer Bottom - Copyright */}
+        <div className="text-center text-gray-400 text-sm py-4 border-t border-gray-800">
           © {new Date().getFullYear()} ShareMrKit. All rights reserved.
+        </div>
+
+        {/* Footer Credit - Designed & Developed By */}
+        <div className="bg-gradient-to-r from-green-900/40 via-black to-green-900/40 border-t border-green-800/50 py-3 px-4">
+          <p className="text-center text-sm text-gray-300">
+            Designed &amp; Developed by{" "}
+            <a
+              href="https://www.digitalsolution360.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-green-400 hover:text-green-300 underline underline-offset-2 transition-colors duration-200"
+            >
+              Digital Solution 360
+            </a>
+          </p>
         </div>
       </footer>
 
