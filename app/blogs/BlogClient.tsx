@@ -139,7 +139,7 @@ const allBlogs = [
 
 export default function BlogClient() {
   const [currentPage, setCurrentPage] = useState(1);
-  const blogsPerPage = 6;
+  const blogsPerPage = 8;
 
   // Calculate indices
   const indexOfLastBlog = currentPage * blogsPerPage;
@@ -220,7 +220,7 @@ export default function BlogClient() {
 
       {/* ================= BLOG GRID ================= */}
       <section className="py-14 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6 text-black grid grid-cols-1 sm:grid-cols-2 gap-10">
+        <div className="max-w-7xl mx-auto px-6 text-black grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {currentBlogs.map((blog, index) => (
             <div
               key={index}
