@@ -14,29 +14,6 @@ import {
   Lightbulb,
 } from "lucide-react";
 
-/* ================= TEAM DATA ================= */
-const teamMembers = [
-  {
-    name: "Savannah Nguyen",
-    role: "Founder & CEO",
-    image: "/team/tm1.png",
-  },
-  {
-    name: "Rahul Sharma",
-    role: "Co-Founder & Mentor",
-    image: "/team/tm2.png",
-  },
-  {
-    name: "Amit Verma",
-    role: "Technical Analyst",
-    image: "/team/tm3.png",
-  },
-  {
-    name: "Neha Singh",
-    role: "Investment Advisor",
-    image: "/team/tm1.png",
-  },
-];
 
 export default function AboutClient() {
      const [play, setPlay] = useState(false);
@@ -209,39 +186,7 @@ export default function AboutClient() {
       {/* ================= COUNTERS ================= */}
       <ExperienceSection />
 
-      {/* ================= TEAM ================= */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 md:text-center">
-          <h2 className="text-3xl md:text-4xl text-black font-bold mb-6">
-            Meet Our <span className="text-[#7ED321]">Team</span>
-          </h2>
 
-          <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
-            Our team brings together trading expertise and teaching excellence.
-          </p>
-
-          <div className="grid grid-cols-1 text-black md:grid-cols-4 gap-8">
-            {teamMembers.map((member, index) => (
-              <div
-                key={index}
-                className="bg-gray-50 rounded-2xl p-6 shadow hover:shadow-xl transition"
-              >
-                <div className="relative w-full h-60 rounded-xl overflow-hidden mb-4">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    className="object-cover transition duration-300 hover:scale-110"
-                  />
-                </div>
-
-                <h4 className="font-semibold text-lg">{member.name}</h4>
-                <p className="text-sm text-gray-500">{member.role}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </>
   );
 }

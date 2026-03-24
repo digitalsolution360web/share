@@ -9,7 +9,6 @@ import AboutFioncaSection from "@/components/home/AboutFioncaSection";
 import BenefitsSection from "@/components/home/BenefitsSection";
 import ExperienceSection from "@/components/home/ExperienceSection";
 import BlogSection from "@/components/home/BlogSection";
-import TeamSection from "@/components/home/TeamSection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
 import FAQSection from "@/components/home/FAQSection";
 
@@ -44,7 +43,6 @@ export default function HomePage() {
       <HowTrainingWorksSection />
       <ClientVideosSection />
       <BlogSection />
-      <TeamSection />
       {/* <ScrollVideoSection /> */}
       <TestimonialsSection />
       <FAQSection />

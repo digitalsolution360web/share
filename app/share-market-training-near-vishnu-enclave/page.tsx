@@ -17,14 +17,14 @@ export default function ShareMarketTrainingNearVishnuEnclave() {
       >
         <div className="absolute inset-0 bg-black/70" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-white text-center md:text-left">
-          <Link 
-            href="/blogs" 
+          <Link
+            href="/blogs"
             className="inline-flex items-center gap-2 text-gray-300 hover:text-[#7ED321] mb-6 transition font-medium"
           >
             <ArrowLeft size={18} /> Back to Blogs
           </Link>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4">
-            Share Market Training Near <span className="text-[#7ED321]">Vishnu Enclave</span>
+            Master the Markets: Top-Tier Share Market Training Near <span className="text-[#7ED321]">Vishnu Enclave</span>
           </h1>
         </div>
       </section>
@@ -33,9 +33,9 @@ export default function ShareMarketTrainingNearVishnuEnclave() {
       <section className="py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-6 space-y-8 text-gray-700 leading-relaxed text-lg">
           <div className="prose max-w-none prose-h2:text-2xl md:prose-h2:text-3xl prose-h2:font-bold prose-h2:text-black prose-h3:text-xl md:prose-h3:text-2xl prose-h3:font-bold prose-h3:text-black prose-p:text-gray-700 prose-a:text-blue-600 hover:prose-a:underline">
-            
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Master the Markets: Top-Tier Share Market Training Near Vishnu Enclave</h2>
-            
+
+            {/* <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Master the Markets: Top-Tier Share Market Training Near Vishnu Enclave</h2> */}
+
             <h3 className="text-2xl font-bold text-black mt-10 mb-4">Introduction</h3>
             <p className="mb-4">
               The financial world has more to explore for beginners when it comes to stock market picking. This is a vast field with endless possibilities of becoming a winner or a loser. The chances of success are higher when you are trained properly to withstand the ups and downs of the share market.
@@ -60,7 +60,7 @@ export default function ShareMarketTrainingNearVishnuEnclave() {
             <p className="mb-6">
               The year “2026” is more AI-driven trading. So, local traders need to be sharper than ever and be ready for high-frequency algorithms. At <strong>Share Market Skills Academy Ghaziabad</strong>, we provide the infrastructure—from high-speed data feeds to advanced charting software—right here in your neighborhood.
             </p>
-            
+
             <p className="mb-10 text-lg">
               <Link href="/contact" className="text-blue-600 underline font-semibold hover:text-blue-800">
                 Join our next batch today and transform your financial future!
@@ -126,23 +126,62 @@ export default function ShareMarketTrainingNearVishnuEnclave() {
             </p>
 
             <h3 className="text-2xl font-bold text-black mt-12 mb-6 border-b pb-2">FAQs</h3>
-            <div className="space-y-6">
-              <div>
-                <h4 className="font-bold text-lg text-black mb-2">Who can join the stock market near Vishnu Enclave?</h4>
-                <p>Anyone can take part in the share market training near vishnu enclave. Students, homemakers, working professionals, retirees, these training sessions fit all.</p>
-              </div>
-              <div>
-                <h4 className="font-bold text-lg text-black mb-2">Is trading in the stock market very risky for beginners?</h4>
-                <p>Trading comes with certain risks, but our stock market coaching Vishnu Enclave focuses heavily on risk management to minimize losses.</p>
-              </div>
-              <div>
-                <h4 className="font-bold text-lg text-black mb-2">What is the duration of the courses at Share Market Skills Academy?</h4>
-                <p>Different modules are available in the share market training near vishnu enclave. It starts from 1 month to 6 months. We offer flexible timing for weekend and weekday batches to suit your schedule.</p>
-              </div>
-              <div>
-                <h4 className="font-bold text-lg text-black mb-2">Do you provide live market practice during the classes?</h4>
-                <p>Yes, our educators of share market training near vishnu enclave let you watch real-time data influences trade decisions.</p>
-              </div>
+            <div className="space-y-4">
+              <details className="group border border-gray-200 rounded-lg overflow-hidden bg-white shadow-sm [&_summary::-webkit-details-marker]:hidden">
+                <summary className="flex cursor-pointer items-center justify-between gap-1.5 p-4 text-gray-900 bg-gray-50 font-medium">
+                  <h4 className="font-bold text-lg text-black">Who can join the stock market near Vishnu Enclave?</h4>
+                  <span className="shrink-0 transition duration-300 group-open:-rotate-180">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </span>
+                </summary>
+                <div className="p-4 border-t border-gray-200 text-gray-700 leading-relaxed bg-white">
+                  <p>Anyone can take part in the share market training near vishnu enclave. Students, homemakers, working professionals, retirees, these training sessions fit all.</p>
+                </div>
+              </details>
+
+              <details className="group border border-gray-200 rounded-lg overflow-hidden bg-white shadow-sm [&_summary::-webkit-details-marker]:hidden">
+                <summary className="flex cursor-pointer items-center justify-between gap-1.5 p-4 text-gray-900 bg-gray-50 font-medium">
+                  <h4 className="font-bold text-lg text-black">Is trading in the stock market very risky for beginners?</h4>
+                  <span className="shrink-0 transition duration-300 group-open:-rotate-180">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </span>
+                </summary>
+                <div className="p-4 border-t border-gray-200 text-gray-700 leading-relaxed bg-white">
+                  <p>Trading comes with certain risks, but our stock market coaching Vishnu Enclave focuses heavily on risk management to minimize losses.</p>
+                </div>
+              </details>
+
+              <details className="group border border-gray-200 rounded-lg overflow-hidden bg-white shadow-sm [&_summary::-webkit-details-marker]:hidden">
+                <summary className="flex cursor-pointer items-center justify-between gap-1.5 p-4 text-gray-900 bg-gray-50 font-medium">
+                  <h4 className="font-bold text-lg text-black">What is the duration of the courses at Share Market Skills Academy?</h4>
+                  <span className="shrink-0 transition duration-300 group-open:-rotate-180">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </span>
+                </summary>
+                <div className="p-4 border-t border-gray-200 text-gray-700 leading-relaxed bg-white">
+                  <p>Different modules are available in the share market training near vishnu enclave. It starts from 1 month to 6 months. We offer flexible timing for weekend and weekday batches to suit your schedule.</p>
+                </div>
+              </details>
+
+              <details className="group border border-gray-200 rounded-lg overflow-hidden bg-white shadow-sm [&_summary::-webkit-details-marker]:hidden">
+                <summary className="flex cursor-pointer items-center justify-between gap-1.5 p-4 text-gray-900 bg-gray-50 font-medium">
+                  <h4 className="font-bold text-lg text-black">Do you provide live market practice during the classes?</h4>
+                  <span className="shrink-0 transition duration-300 group-open:-rotate-180">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </span>
+                </summary>
+                <div className="p-4 border-t border-gray-200 text-gray-700 leading-relaxed bg-white">
+                  <p>Yes, our educators of share market training near vishnu enclave let you watch real-time data influences trade decisions.</p>
+                </div>
+              </details>
             </div>
 
           </div>
