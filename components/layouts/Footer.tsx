@@ -47,8 +47,13 @@ export default function Footer() {
                 <Facebook size={22} />
               </a>
 
-              <a className="text-gray-400 hover:text-red-500 transition cursor-pointer">
-                <Youtube size={22} />
+              <a
+                href="https://wa.me/918460188483"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-green-500 transition cursor-pointer"
+              >
+                <FontAwesomeIcon icon={faWhatsapp} style={{ fontSize: "22px" }} />
               </a>
             </div>
           </div>
