@@ -6,17 +6,25 @@ import { motion, AnimatePresence } from "framer-motion"
 import { X } from "lucide-react"
 import { useState } from "react"
 
-const galleryImages = [
-  "/Gallery/g1.jpg",
-  "/Gallery/g2.jpg",
-  "/Gallery/g3.jpg",
-  "/Gallery/g4.webp",
-  "/Gallery/g5.webp",
-  "/Gallery/g6.webp",
+type GalleryImage = {
+  src: string;
+  alt: string;
+  title: string;
+};
+
+const galleryImages: GalleryImage[] = [
+  { src: "/Gallery/g1.jpg", alt: "Share Market Training Session 1", title: "Live Trading Workshop" },
+  { src: "/Gallery/g2.jpg", alt: "Share Market Training Session 2", title: "Technical Analysis Class" },
+  { src: "/Gallery/g3.jpg", alt: "Share Market Training Session 3", title: "Options Strategies Seminar" },
+  { src: "/Gallery/g4.webp", alt: "Share Market Training Session 4", title: "Student Success Stories" },
+  { src: "/Gallery/g5.webp", alt: "Share Market Training Session 5", title: "Market Mentorship" },
+  { src: "/Gallery/g6.webp", alt: "Share Market Training Session 6", title: "Trading Floor Experience" },
+  { src: "/gll.jpeg", alt: "Advanced Share Market Concepts", title: "Advanced Trading Course" },
+  { src: "/gl2.jpeg", alt: "Beginner Share Market Overview", title: "Beginner Market Overview" },
 ]
 
 export default function GalleryClient() {
-  const [activeImage, setActiveImage] = useState<string | null>(null)
+  const [activeImage, setActiveImage] = useState<GalleryImage | null>(null)
 
   return (
     <div className="bg-white">
@@ -58,20 +66,22 @@ export default function GalleryClient() {
 
       {/* ===== Gallery Grid ===== */}
       <section className="max-w-7xl mx-auto px-6 pb-20">
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {galleryImages.map((img, index) => (
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+          {galleryImages.map((item, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
-              onClick={() => setActiveImage(img)}
+              onClick={() => setActiveImage(item)}
+              title={item.title}
               className="relative h-64 rounded-2xl overflow-hidden shadow-lg group cursor-pointer"
             >
               <Image
-                src={img}
-                alt={`Gallery Image ${index + 1}`}
+                src={item.src}
+                alt={item.alt}
+                title={item.title}
                 fill
                 className="object-cover group-hover:scale-110 transition duration-300"
               />
@@ -111,8 +121,9 @@ export default function GalleryClient() {
               {/* Image */}
               <div className="relative w-full min-h-[400px]">
                 <Image
-                  src={activeImage}
-                  alt="Gallery Preview"
+                  src={activeImage.src}
+                  alt={activeImage.alt}
+                  title={activeImage.title}
                   fill
                   className="object-contain"
                 />
