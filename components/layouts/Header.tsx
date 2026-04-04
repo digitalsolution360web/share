@@ -11,11 +11,13 @@ import {
   Facebook,
   Instagram,
   Linkedin,
+  ChevronDown,
 } from "lucide-react";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [coursesDropdownOpen, setCoursesDropdownOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -99,7 +101,37 @@ export default function Header() {
           >
             <Link href="/" className="text-[#7ED321]">Home</Link>
             <Link href="/about">About</Link>
-            <Link href="/courses">Courses</Link>
+            
+            {/* COURSES DROPDOWN */}
+            <div 
+              className="relative group h-full flex items-center"
+              onMouseEnter={() => setCoursesDropdownOpen(true)}
+              onMouseLeave={() => setCoursesDropdownOpen(false)}
+            >
+              <button className={`flex items-center gap-1 transition-colors h-full ${scrolled ? 'text-gray-800' : 'text-white'} hover:text-[#7ED321]`}>
+                Courses <ChevronDown size={14} className={`transition-transform duration-300 ${coursesDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+              
+              {/* Dropdown Menu - Sleek Floating Pill Design */}
+              <div 
+                className={`absolute left-[-10px] top-[60px] w-48 transition-all duration-300 origin-top z-50
+                ${coursesDropdownOpen ? 'opacity-100 scale-100 translate-y-0 visible' : 'opacity-0 scale-95 -translate-y-2 invisible'}`}
+              >
+                {/* Small Arrow */}
+                <div className="absolute top-[-6px] left-[30px] w-3 h-3 bg-white rotate-45 border-t border-l border-gray-100" />
+                
+                <div className="bg-white shadow-[0_15px_50px_rgba(0,0,0,0.15)] rounded-xl border border-gray-100 overflow-hidden relative z-10">
+                  <Link 
+                    href="/crypto-trading-course" 
+                    className="flex items-center gap-3 px-5 py-4 text-gray-700 hover:bg-[#7ED321] hover:text-white transition-all text-[13px] font-bold group/link"
+                  >
+                    <div className="w-2 h-2 bg-[#7ED321] rounded-full group-hover/link:bg-white transition-colors animate-pulse" />
+                    CRYPTO TRADING
+                  </Link>
+                </div>
+              </div>
+            </div>
+
             <Link href="/services">Services</Link>
             <Link href="/gallery">Gallery</Link>
             <Link href="/blogs">Blogs</Link>
@@ -133,11 +165,22 @@ export default function Header() {
 
         {/* MOBILE MENU */}
         {menuOpen && (
-          <div className="md:hidden bg-white shadow-lg">
+          <div className="md:hidden bg-white shadow-lg overflow-y-auto max-h-[80vh]">
             <nav className="flex flex-col p-6 gap-4 text-gray-800 font-medium">
               <Link href="/" onClick={() => setMenuOpen(false)}>Home</Link>
               <Link href="/about" onClick={() => setMenuOpen(false)}>About</Link>
-              <Link href="/courses" onClick={() => setMenuOpen(false)}>Courses</Link>
+              
+              <div className="flex flex-col gap-2">
+                <Link href="/courses" onClick={() => setMenuOpen(false)}>
+                  <div className="flex items-center justify-between font-bold text-[#7ED321]">
+                    <span>Courses</span>
+                  </div>
+                </Link>
+                <div className="pl-4 flex flex-col gap-3 mt-1 border-l-2 border-gray-100">
+                  <Link href="/crypto-trading-course" onClick={() => setMenuOpen(false)} className="text-sm">Crypto Trading</Link>
+                </div>
+              </div>
+
               <Link href="/services" onClick={() => setMenuOpen(false)}>Services</Link>
               <Link href="/gallery" onClick={() => setMenuOpen(false)}>Gallery</Link>
               <Link href="/blogs" onClick={() => setMenuOpen(false)}>Blogs</Link>

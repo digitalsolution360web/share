@@ -125,10 +125,14 @@ export default function CoursesClient() {
                 </ul>
 
                 <Link
-                  href="/contact"
+                  href={
+                    index === 0 ? "/stock-market-course-near-me-ghaziabad" : 
+                    index === 1 ? "/crypto-trading-course" : 
+                    "/contact"
+                  }
                   className="inline-block mt-6 bg-[#7ED321] text-black px-6 py-3 rounded-lg font-semibold hover:bg-green-500 transition"
                 >
-                  Enquire Now
+                  {index === 2 ? "Enquire Now" : "View Details"}
                 </Link>
               </div>
             </div>
