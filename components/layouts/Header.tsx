@@ -77,10 +77,10 @@ export default function Header() {
 
       {/* MAIN HEADER */}
       <header
-        className={`fixed left-0 w-full z-40 transition-all duration-300
-        ${scrolled ? "top-0 bg-white shadow-md" : "top-0 md:top-[40px] bg-transparent"}`}
+        className={`fixed left-0 w-full z-40 transition-all duration-500 transform-gpu
+        ${scrolled ? "top-0 bg-white shadow-md py-2" : "top-0 md:top-[40px] bg-transparent py-4 md:py-6"}`}
       >
-        <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between">
 
           {/* LOGO WITH LINK */}
           <Link href="/" className="flex items-center">
@@ -127,6 +127,13 @@ export default function Header() {
                   >
                     <div className="w-2 h-2 bg-[#7ED321] rounded-full group-hover/link:bg-white transition-colors animate-pulse" />
                     CRYPTO TRADING
+                  </Link>
+                  <Link 
+                    href="/online-training" 
+                    className="flex items-center gap-3 px-5 py-4 text-gray-700 hover:bg-[#7ED321] hover:text-white transition-all text-[13px] font-bold group/link border-t border-gray-50"
+                  >
+                    <div className="w-2 h-2 bg-[#7ED321] rounded-full group-hover/link:bg-white transition-colors animate-pulse" />
+                    ONLINE TRAINING
                   </Link>
                 </div>
               </div>
@@ -178,6 +185,7 @@ export default function Header() {
                 </Link>
                 <div className="pl-4 flex flex-col gap-3 mt-1 border-l-2 border-gray-100">
                   <Link href="/crypto-trading-course" onClick={() => setMenuOpen(false)} className="text-sm">Crypto Trading</Link>
+                  <Link href="/online-training" onClick={() => setMenuOpen(false)} className="text-sm">Online Training</Link>
                 </div>
               </div>
 

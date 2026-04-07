@@ -7,6 +7,20 @@ import { CheckCircle } from "lucide-react"
 /* ================= COURSES DATA ================= */
 const courses = [
   {
+    title: "Online Stock Market Training",
+    location: "Live Interactive Online Batches",
+    image: "/gl2.jpeg",
+    points: [
+      "Master Option Selling & High-probability strategies",
+      "Cash Equity Swing Trading (5-15% moves in stocks)",
+      "Technical analysis & Price Action mastery",
+      "9+ Years of live market mentor experience",
+      "Lifetime support & doubt-clearing sessions",
+      "Professional certificate of completion",
+      "Job placement assistance for eligible students",
+    ],
+  },
+  {
     title: "Stock Market Trading Courses",
     location: "Ghaziabad & Delhi NCR",
     image: "/cources/stock-market-course.jpeg",
@@ -126,13 +140,14 @@ export default function CoursesClient() {
 
                 <Link
                   href={
-                    index === 0 ? "/stock-market-course-near-me-ghaziabad" : 
-                    index === 1 ? "/crypto-trading-course" : 
+                    index === 0 ? "/online-training" : 
+                    index === 1 ? "/stock-market-course-near-me-ghaziabad" : 
+                    index === 2 ? "/crypto-trading-course" : 
                     "/contact"
                   }
                   className="inline-block mt-6 bg-[#7ED321] text-black px-6 py-3 rounded-lg font-semibold hover:bg-green-500 transition"
                 >
-                  {index === 2 ? "Enquire Now" : "View Details"}
+                  {index === 3 ? "Enquire Now" : "View Details"}
                 </Link>
               </div>
             </div>

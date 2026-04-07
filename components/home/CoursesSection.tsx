@@ -1,8 +1,23 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const courses = [
+  {
+    title: "Online Stock Market Training",
+    subtitle: "Advanced Online Stock Market Training",
+    img: "/gl2.jpeg",
+    points: [
+      "Master Option Selling strategies",
+      "Cash Equity Swing Trading",
+      "9+ Years of market experience",
+      "Lifetime mentorship & support",
+      "Pattern analysis & Breakout trading",
+      "Risk management focus",
+      "Certificate & Job Assistance",
+    ],
+  },
   {
     title: "Stock Market Trading Courses",
     subtitle: "Stock Market Trading Courses in Ghaziabad & Delhi NCR",
@@ -63,11 +78,11 @@ export default function CoursesSection() {
         </div>
 
         {/* ================= COURSES GRID ================= */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {courses.map((course, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition"
+              className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition flex flex-col h-full"
             >
               {/* Image */}
               <div className="relative h-48 w-full">
@@ -75,18 +90,18 @@ export default function CoursesSection() {
                   src={course.img}
                   alt={course.title}
                   fill
-                  className=" object-top"
+                  className=" object-top object-cover"
                 />
               </div>
 
               {/* Content */}
-              <div className="p-6 text-left space-y-4">
+              <div className="p-6 text-left space-y-4 flex flex-col flex-1">
                 {/* H3 */}
-                <h3 className="text-xl font-semibold text-gray-900">
+                <h3 className="text-xl font-semibold text-gray-900 min-h-[56px]">
                   {course.subtitle}
                 </h3>
 
-                <ul className="space-y-2 text-sm text-gray-700">
+                <ul className="space-y-2 text-sm text-gray-700 flex-1">
                   {course.points.map((point, i) => (
                     <li key={i} className="flex gap-2">
                       <span className="text-green-600 font-bold">✔</span>
@@ -94,6 +109,20 @@ export default function CoursesSection() {
                     </li>
                   ))}
                 </ul>
+
+                <div className="pt-4 border-t border-gray-100">
+                  <Link 
+                    href={
+                      index === 0 ? "/online-training" : 
+                      index === 1 ? "/stock-market-course-near-me-ghaziabad" : 
+                      index === 2 ? "/crypto-trading-course" : 
+                      "/courses"
+                    }
+                    className="text-[#7ED321] font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all"
+                  >
+                    View Course Details <span className="text-lg">→</span>
+                  </Link>
+                </div>
               </div>
             </div>
           ))}

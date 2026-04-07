@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+ 
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -19,12 +19,24 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
+header {
+  will-change: transform, background-color, backdrop-filter;
+  transform: translateZ(0);
+}
+ 
 @keyframes marquee {
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }

@@ -28,9 +28,9 @@ function useCounter(end, duration = 2000) {
 }
 
 export default function ExperienceSection() {
-  const years = useCounter(10);
-  const batches = useCounter(25);
-  const students = useCounter(300);
+  const years = useCounter(9);
+  const batches = useCounter(40);
+  const students = useCounter(500);
   const stars = useCounter(5);
 
   return (
