@@ -101,9 +101,9 @@ export default function Header() {
           >
             <Link href="/" className="text-[#7ED321]">Home</Link>
             <Link href="/about">About</Link>
-            
+
             {/* COURSES DROPDOWN */}
-            <div 
+            <div
               className="relative group h-full flex items-center"
               onMouseEnter={() => setCoursesDropdownOpen(true)}
               onMouseLeave={() => setCoursesDropdownOpen(false)}
@@ -111,29 +111,29 @@ export default function Header() {
               <button className={`flex items-center gap-1 transition-colors h-full ${scrolled ? 'text-gray-800' : 'text-white'} hover:text-[#7ED321]`}>
                 Courses <ChevronDown size={14} className={`transition-transform duration-300 ${coursesDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
-              
+
               {/* Dropdown Menu - Sleek Floating Pill Design */}
-              <div 
+              <div
                 className={`absolute left-[-10px] top-[60px] w-48 transition-all duration-300 origin-top z-50
                 ${coursesDropdownOpen ? 'opacity-100 scale-100 translate-y-0 visible' : 'opacity-0 scale-95 -translate-y-2 invisible'}`}
               >
                 {/* Small Arrow */}
                 <div className="absolute top-[-6px] left-[30px] w-3 h-3 bg-white rotate-45 border-t border-l border-gray-100" />
-                
+
                 <div className="bg-white shadow-[0_15px_50px_rgba(0,0,0,0.15)] rounded-xl border border-gray-100 overflow-hidden relative z-10">
-                  <Link 
-                    href="/crypto-trading-course" 
+                  <Link
+                    href="/crypto-trading-course"
                     className="flex items-center gap-3 px-5 py-4 text-gray-700 hover:bg-[#7ED321] hover:text-white transition-all text-[13px] font-bold group/link"
                   >
                     <div className="w-2 h-2 bg-[#7ED321] rounded-full group-hover/link:bg-white transition-colors animate-pulse" />
                     CRYPTO TRADING
                   </Link>
-                  <Link 
-                    href="/online-training" 
+                  <Link
+                    href="/online-training"
                     className="flex items-center gap-3 px-5 py-4 text-gray-700 hover:bg-[#7ED321] hover:text-white transition-all text-[13px] font-bold group/link border-t border-gray-50"
                   >
                     <div className="w-2 h-2 bg-[#7ED321] rounded-full group-hover/link:bg-white transition-colors animate-pulse" />
-                    ONLINE TRAINING
+                    STOCK TRAINING
                   </Link>
                 </div>
               </div>
@@ -176,7 +176,7 @@ export default function Header() {
             <nav className="flex flex-col p-6 gap-4 text-gray-800 font-medium">
               <Link href="/" onClick={() => setMenuOpen(false)}>Home</Link>
               <Link href="/about" onClick={() => setMenuOpen(false)}>About</Link>
-              
+
               <div className="flex flex-col gap-2">
                 <Link href="/courses" onClick={() => setMenuOpen(false)}>
                   <div className="flex items-center justify-between font-bold text-[#7ED321]">
