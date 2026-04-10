@@ -137,17 +137,20 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Address</h4>
 
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
-              41 Vishnu Enclave,
-              Main Hapur Road,
-              Opp. Govindpuram, Ghaziabad<br />
+              Vishnu enclave, 41, Hapur Rd, <br />
+              Opp. Govindpuram, Gangapuram, <br />
+              Avantika Colony, Shastri Nagar, Ghaziabad, <br />
+              Uttar Pradesh 201013 <br />
               📞 +91 8460188483
             </p>
 
-            {/* 🗺️ Small Google Map */}
             <div className="w-full h-40 rounded-lg overflow-hidden border border-gray-800">
               <iframe
-                src="https://www.google.com/maps?q=41%20Vishnu%20Enclave,%20Main%20Hapur%20Road,%20Ghaziabad&output=embed"
-                className="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.3615452658055!2d77.488283!3d28.678829599999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf34e4fde2697%3A0x2578fcd757789f38!2sShareMarket%20Skills%20Academy%20-%20Govindpuram!5e0!3m2!1sen!2sin!4v1775793205007!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
@@ -157,7 +160,7 @@ export default function Footer() {
 
         {/* Footer Bottom - Copyright */}
         <div className="text-center text-gray-400 text-sm py-4 border-t border-gray-800">
-          © {new Date().getFullYear()} ShareMrKit. All rights reserved.
+          © {new Date().getFullYear()} ShareMarket. Skills Academy
         </div>
 
         {/* Footer Credit - Designed & Developed By */}
