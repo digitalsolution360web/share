@@ -8,12 +8,12 @@ import { ArrowRight } from "lucide-react";
 /* ================= BLOG DATA ================= */
 const allBlogs = [
   {
-    title: "Share Market Course in Ghaziabad – Start Your Trading Journey Today",
+    title: "Master the Markets with SMSA: Best Share Market Course in Ghaziabad",
     desc:
-      "Looking for the best share market course in Ghaziabad? Whether you are a student, working professional, or business owner, learning stock market trading can open the door to financial growth.",
+      "Looking for the best share market course in Ghaziabad? Join SMSA, the leading trading academy in Ghaziabad, for expert-led share market courses.",
     image: "/blogs/share-market-course.png",
     category: ["Share Market", "Trading", "Investment"],
-    slug: "/share-market-course-ghaziabad",
+    slug: "/smsa-share-market-course-ghaziabad",
   },
   {
     title: "Stock Market Training in Ghaziabad – Professional Trading Classes",

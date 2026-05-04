@@ -12,12 +12,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const blogs = [
-     {
-    title: "Share Market Course in Ghaziabad",
+  {
+    title: "Master the Markets with SMSA",
     category: "Stock Market",
-    desc: "Start your trading journey with the best share market course in Ghaziabad.",
+    desc: "Best Share Market Course in Ghaziabad. Join SMSA for expert-led training.",
     img: "/blogs/share-market-course.png",
-    slug: "/share-market-course-ghaziabad",
+    slug: "/smsa-share-market-course-ghaziabad",
   },
   {
     title: "Stock Market Training in Ghaziabad",
