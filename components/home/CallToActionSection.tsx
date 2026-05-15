@@ -2,8 +2,19 @@
 
 import Link from "next/link";
 import { PhoneCall, MessageCircle, MapPin, Mail } from "lucide-react";
+import { usePathname } from "next/navigation";
+
 
 export default function CallToActionSection() {
+
+  const pathname = usePathname();
+
+  const hideOnPages = ['/crypto-trading-course', "/online-training"];
+
+  if
+    (hideOnPages.includes(pathname)) {
+    return null;
+  }
   return (
     <section className="relative py-24 bg-gradient-to-r from-black via-gray-900 to-black text-white">
       {/* Overlay */}

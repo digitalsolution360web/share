@@ -16,7 +16,7 @@ import {
 
 
 export default function AboutClient() {
-     const [play, setPlay] = useState(false);
+  const [play, setPlay] = useState(false);
   return (
     <>
       {/* ================= HERO ================= */}
@@ -44,9 +44,9 @@ export default function AboutClient() {
           </p>
         </div>
       </section>
-        
 
-    
+
+
       {/* ================= STORY ================= */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
@@ -86,59 +86,59 @@ export default function AboutClient() {
           </div>
         </div>
       </section>
-   
-     
 
-<section className="bg-white py-20">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="relative rounded-3xl overflow-hidden shadow-2xl">
 
-          {/* ===== POSTER IMAGE ===== */}
-          {!play && (
-            <>
-              <img
-                src="/banner/b2.jpg"
-                alt="Video Poster"
-                className="w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[520px] object-cover"
-              />
 
-              {/* Overlay */}
-              <div className="absolute inset-0 flex items-end bg-black/40">
-                <div className="w-full bg-gradient-to-t from-black/80 via-black/30 to-transparent p-8 md:p-12">
-                  <h3 className="text-2xl md:text-4xl font-bold text-white mb-3">
-                    Learn Trading from Market Experts
-                  </h3>
+      <section className="bg-white py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl">
 
-                  <p className="text-gray-200 max-w-xl mb-6">
-                    Watch how Share Market Skills Academy transforms beginners into
-                    confident traders with practical learning.
-                  </p>
+            {/* ===== POSTER IMAGE ===== */}
+            {!play && (
+              <>
+                <img
+                  src="/banner/b2.jpg"
+                  alt="Video Poster"
+                  className="w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[520px] object-cover"
+                />
 
-                  <button
-                    onClick={() => setPlay(true)}
-                    className="bg-[#7ED321] hover:bg-[#6ac11c] text-black px-8 py-3 rounded-full font-semibold transition flex items-center gap-2"
-                  >
-                    ▶ Watch Full Story
-                  </button>
+                {/* Overlay */}
+                <div className="absolute inset-0 flex items-end bg-black/40">
+                  <div className="w-full bg-gradient-to-t from-black/80 via-black/30 to-transparent p-8 md:p-12">
+                    <h3 className="text-2xl md:text-4xl font-bold text-white mb-3">
+                      Learn Trading from Market Experts
+                    </h3>
+
+                    <p className="text-gray-200 max-w-xl mb-6">
+                      Watch how Share Market Skills Academy transforms beginners into
+                      confident traders with practical learning.
+                    </p>
+
+                    <button
+                      onClick={() => setPlay(true)}
+                      className="bg-[#7ED321] hover:bg-[#6ac11c] text-black px-8 py-3 rounded-full font-semibold transition flex items-center gap-2"
+                    >
+                      ▶ Watch Full Story
+                    </button>
+                  </div>
                 </div>
-              </div>
-            </>
-          )}
+              </>
+            )}
 
-          {/* ===== YOUTUBE VIDEO ===== */}
-          {play && (
-            <iframe
-              className="w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[520px]"
-              src="https://www.youtube.com/embed/G2_GGdGgtoA?autoplay=1"
-              title="Share Market Skills Academy"
-              allow="autoplay; encrypted-media; picture-in-picture"
-              allowFullScreen
-            />
-          )}
+            {/* ===== YOUTUBE VIDEO ===== */}
+            {play && (
+              <iframe
+                className="w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[520px]"
+                src="https://www.youtube.com/embed/G2_GGdGgtoA?autoplay=1"
+                title="Share Market Skills Academy"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowFullScreen
+              />
+            )}
+          </div>
         </div>
-      </div>
-    </section>
-  
+      </section>
+
 
 
       {/* ================= WHY DIFFERENT ================= */}
@@ -182,7 +182,7 @@ export default function AboutClient() {
           </div>
         </div>
       </section>
-      
+
       {/* ================= COUNTERS ================= */}
       <ExperienceSection />
 
@@ -219,3 +219,4 @@ function WhyCard({
     </div>
   );
 }
+

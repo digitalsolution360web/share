@@ -4,6 +4,8 @@ import "./globals.css";
 
 import Header from "@/components/layouts/Header";
 import Footer from "@/components/layouts/Footer";
+import CallToActionSection from "@/components/home/CallToActionSection";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +35,8 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <CallToActionSection />
+
         <Footer />
       </body>
     </html>

@@ -16,7 +16,7 @@ import FAQSection from "@/components/home/FAQSection";
 import WhoCanJoinSection from "@/components/home/WhoCanJoinSection";
 import LocationTrainingSection from "@/components/home/LocationTrainingSection";
 import HowTrainingWorksSection from "@/components/home/HowTrainingWorksSection";
-import CallToActionSection from "@/components/home/CallToActionSection";
+// import CallToActionSection from "@/components/home/CallToActionSection";
 import ClientVideosSection from "@/components/home/ClientVideosSection";
 
 const ScrollVideoSection = dynamic(
@@ -32,10 +32,10 @@ export default function HomePage() {
       <IntroSection />
       <CoursesSection />
 
-      
+
 
       <AboutFioncaSection />
-      
+
       <WhoCanJoinSection />
       <LocationTrainingSection />
       <BenefitsSection />
@@ -46,7 +46,7 @@ export default function HomePage() {
       {/* <ScrollVideoSection /> */}
       <TestimonialsSection />
       <FAQSection />
-      <CallToActionSection />
+      {/* <CallToActionSection /> */}
     </>
   );
 }
